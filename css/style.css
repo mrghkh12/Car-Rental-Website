@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
-
+ /* + reset and utility style */
 :root{
     --primary-color: #fe5b3e;
     --text-dark: #0f172a;
@@ -74,3 +74,21 @@ body{
 body{
     font-family: 'Mulish';
 }
+ /* / reset and utility style */
+
+ /* + header section */
+ header{
+    position: relative;
+ }
+header::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.1));
+    z-index: -1;
+}
+
+ /* / header section */
