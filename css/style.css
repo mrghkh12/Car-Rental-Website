@@ -91,6 +91,7 @@ header::before{
     z-index: -1;
 }
 
+/* + nav bar and nav menu */
 nav{
     position: fixed;
     isolation: isolate;
@@ -130,7 +131,7 @@ nav{
     gap: 2rem;
     background-color: var(--primary-color);
     transition: 0.5s;
-    /* transform: translateY(-100%); */
+    transform: translateY(-150%);
 }
 .nav__links.open{
     transform: translateY(0);
@@ -149,4 +150,6 @@ nav{
 .nav__btns{
     display: none;
 }
- /* / header section */
+/* / nav bar and nav menu */
+
+/* / header section */
