@@ -42,3 +42,21 @@ ScrollReveal().reveal('.steps__card', {
     ...scrollRevealOption,
     interval:500,
 })
+
+ScrollReveal().reveal('.service__image img', {
+    ...scrollRevealOption,
+    origin:"left",
+})
+ScrollReveal().reveal('.service__content .section__subheader', {
+    ...scrollRevealOption,
+    delay:500,
+})
+ScrollReveal().reveal('.service__content .section__header', {
+    ...scrollRevealOption,
+    delay:1000,
+})
+ScrollReveal().reveal('.service__list li', {
+    ...scrollRevealOption,
+    delay:1500,
+    interval:500,
+})
