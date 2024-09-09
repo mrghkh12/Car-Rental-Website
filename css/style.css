@@ -91,7 +91,6 @@ header::before{
     z-index: -1;
 }
 
-/* + nav bar and nav menu */
 nav{
     position: fixed;
     isolation: isolate;
@@ -103,6 +102,8 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
+    z-index: 5;
+    position: fixed;
     justify-content: space-between;
     background-color: var(--primary-color);
 }
@@ -124,6 +125,7 @@ nav{
     left: 0;
     width: 100%;
     padding: 2rem;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,6 +152,8 @@ nav{
 .nav__btns{
     display: none;
 }
+
+
 
 @media (width > 768px){
     header::before{
@@ -211,6 +215,6 @@ nav{
         background-color: transparent;
     }
 }
-/* / nav bar and nav menu */
+
 
 /* / header section */
