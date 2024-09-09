@@ -60,3 +60,8 @@ ScrollReveal().reveal('.service__list li', {
     delay:1500,
     interval:500,
 })
+
+ScrollReveal().reveal('.experience__card', {
+    duration:1000,
+    interval:500,
+})
