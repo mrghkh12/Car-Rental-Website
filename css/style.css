@@ -301,6 +301,88 @@ nav{
 }
 /* / service section */
 
+/* + experience section */
+
+.experience__container :is(.section__subheader, .section__header){
+    text-align: center;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.experience__content{
+    max-width: 1024px;
+    margin-inline: auto;
+    margin-top: 4rem;
+    position: relative;
+    isolation: isolate;
+}
+
+.experience__content img{
+    max-width: 300px;
+    margin-inline: auto;
+    opacity: 0.5;
+}
+
+.experience__card{
+    position: absolute;
+    max-width: 200px;
+} 
+
+.experience__card span{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 10px 13px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--extra-light);
+    border: 4px solid var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+}
+
+.experience__card h4{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.experience__card:nth-child(1){
+    top: 5rem;
+    left: 1rem;
+} 
+
+.experience__card:nth-child(2){
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+} 
+
+.experience__card:nth-child(3){
+    bottom: 5rem;
+    left: 1rem;
+} 
+
+.experience__card:nth-child(4){
+    top: 5rem;
+    right: 1rem;
+    text-align: right;
+} 
+
+.experience__card:nth-child(5){
+    top: 50%;
+    right: 1rem;
+    text-align: right;
+    transform: translateY(-50%);
+} 
+
+.experience__card:nth-child(6){
+    bottom: 5rem;
+    right: 1rem;
+    text-align: right;
+} 
+
+/* / experience section */
+
 
 @media (width > 540px){
     /* + rent steps section */
@@ -404,6 +486,28 @@ nav{
         align-items: center;
     }
     /* / service section */
+
+    /* + experience section */  
+    .experience__content img{
+        opacity: 1;
+    }
+
+    .experience__card:nth-child(1){
+        left: 5rem;
+    }
+
+    .experience__card:nth-child(3){
+        left: 5rem;
+    }
+
+    .experience__card:nth-child(4){
+        right: 5rem;
+    }
+
+    .experience__card:nth-child(6){
+        right: 5rem;
+    }
+    /* / experience section */
 }
 
 
